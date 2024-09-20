@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lwgg999的个人网站</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link active" data-target="home">首页</a></li>
+                <li><a href="#projects" class="nav-link" data-target="projects">项目</a></li>
+                <li><a href="#articles" class="nav-link" data-target="articles">文章</a></li>
+                <li><a href="#contact" class="nav-link" data-target="contact">联系</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="page active">
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox-home">
+                    <input type="checkbox" id="checkbox-home" class="theme-checkbox" />
+                    <div class="slider round"></div>
+                </label>
+                <em>启用暗色模式</em>
+            </div>
+            <div class="hero">
+                <div class="hero-content">
+                    <img src="C:\Users\wsnbb\Desktop\daima\img\微信截图_20240918070122.png" alt="lwgg999的头像" class="profile-img">
+                    <h1>lwgg999</h1>
+                    <p class="tagline">网络安全爱好者 | 编程爱好者 | 技术博主</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="content-section">
+                <h2>快速链接</h2>
+                <div class="link-grid">
+                    <a href="https://www.douyin.com/user/your-username" class="link-card" target="_blank">
+                        <i class="fab fa-tiktok"></i>
+                        <span>抖音</span>
+                    </a>
+                    <a href="https://weibo.com/your-username" class="link-card" target="_blank">
+                        <i class="fab fa-weibo"></i>
+                        <span>微博</span>
+                    </a>
+                    <a href="https://consumer.huawei.com/cn/" class="link-card" target="_blank">
+                        <i class="fab fa-android"></i>
+                        <span>华为</span>
+                    </a>
+                    <a href="https://www.apple.com/cn/" class="link-card" target="_blank">
+                        <i class="fab fa-apple"></i>
+                        <span>苹果</span>
+                    </a>
+                    <a href="https://www.youtube.com/channel/your-channel" class="link-card" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                        <span>YouTube</span>
+                    </a>
+                    <a href="https://github.com/your-username" class="link-card" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://cloud.tencent.com/" class="link-card" target="_blank">
+                        <i class="fab fa-cloud"></i>
+                        <span>腾讯云</span>
+                    </a>
+                    <a href="https://www.google.com/" class="link-card" target="_blank">
+                        <i class="fab fa-google"></i>
+                        <span>Google</span>
+                    </a>
+                </div>
+            </div>
+            <div class="content-section">
+                <h2>计算器代码</h2>
+                <div class="code-block-wrapper">
+                    <pre><code class="language-html">
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多功能计算器</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        #calculator {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="calculator">
+    <input type="text" id="input" placeholder="输入计算表达式">
+    <button onclick="calculate()">计算</button>
+    <button onclick="clearInput()">清除</button>
+    <div id="result"></div>
+</div>
+
+<script>
+    function calculate() {
+        const input = document.getElementById('input').value;
+        let result;
+        try {
+            // 处理基本的运算
+            result = eval(input); // 仅用于示例，实际应用中需谨慎使用eval
+        } catch (e) {
+            result = '错误';
+        }
+        document.getElementById('result').innerText = '结果: ' + result;
+    }
+
+    function clearInput() {
+        document.getElementById('input').value = '';
+        document.getElementById('result').innerText = '';
+    }
+</script>
+
+</body>
+</html>
+                    </code></pre>
+                    <button class="copy-btn" data-clipboard-target="#code-block">复制代码</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="page">
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox-projects">
+                    <input type="checkbox" id="checkbox-projects" class="theme-checkbox" />
+                    <div class="slider round"></div>
+                </label>
+                <em>启用暗色模式</em>
+            </div>
+            <h2>精选项目</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>个人博客系统</h3>
+                    <p>使用 Django 和 React 开发的全栈博客系统，支持 Markdown 编辑、评论功能和标签分类。</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Django</span>
+                        <span class="tag">React</span>
+                        <span class="tag">PostgreSQL</span>
+                    </div>
+                    <a href="#" class="btn">查看详情</a>
+                </div>
+                <div class="project-card">
+                    <h3>智能家居控制系统</h3>
+                    <p>基于树莓派和 Arduino 的智能家居控制系统，可通过手机 App 远程控制家电设备。</p>
+                    <div class="project-tags">
+                        <span class="tag">IoT</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">React Native</span>
+                    </div>
+                    <a href="#" class="btn">查看详情</a>
+                </div>
+                <div class="project-card">
+                    <h3>网络安全工具集</h3>
+                    <p>一套用于网络安全分析和渗透测试的工具集，包括端口扫描、漏洞检测和密码破解等功能。</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Bash</span>
+                        <span class="tag">网络安全</span>
+                    </div>
+                    <a href="#" class="btn">查看详情</a>
+                </div>
+                <div class="project-card">
+                    <h3>区块链投票系统</h3>
+                    <p>基于以太坊的去中心化投票系统，确保投票过程的透明性和不可篡改性。</p>
+                    <div class="project-tags">
+                        <span class="tag">Solidity</span>
+                        <span class="tag">Web3.js</span>
+                        <span class="tag">React</span>
+                        <span class="tag">区块链</span>
+                    </div>
+                    <a href="#" class="btn">查看详情</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="articles" class="page">
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox-articles">
+                    <input type="checkbox" id="checkbox-articles" class="theme-checkbox" />
+                    <div class="slider round"></div>
+                </label>
+                <em>启用暗色模式</em>
+            </div>
+            <h2>最新文章</h2>
+            <div class="article-grid">
+                <article class="article-card">
+                    <h3>魔法上网</h3>
+                    <p>Android客户端-Clash for Android使用教程...</p>
+                    <a href="#" class="btn">阅读更多</a>
+                </article>
+                <!-- 添加更多文章卡片 -->
+            </div>
+        </section>
+
+        <section id="contact" class="page">
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox-contact">
+                    <input type="checkbox" id="checkbox-contact" class="theme-checkbox" />
+                    <div class="slider round"></div>
+                </label>
+                <em>启用暗色模式</em>
+            </div>
+            <h2>联系我</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>联系方式</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> Email: your.email@example.com</li>
+                        <li><i class="fas fa-phone"></i> 电话: +86 123 4567 8900</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 地址: 中国某省某市某区</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-weixin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-qq"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="姓名" required>
+                    <input type="email" placeholder="电子邮件" required>
+                    <input type="text" placeholder="主题">
+                    <textarea placeholder="留言内容" required></textarea>
+                    <button type="submit" class="btn">发送消息</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 lwgg999. 保留所有权利。</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
+</body>
+</html>
